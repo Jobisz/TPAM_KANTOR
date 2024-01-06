@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!------------------------------------------------------------------------------------------------>
+    
+<!--Sekcja Head
+Znaczniki Meta informują o danych Strony
+Znaczniki link odnoszą się w większości do plików Stylów, ale ostatni także do Naszego manifestu
+który pozwala na to, że Nasza strona jest Progresywną Aplikacją Mobilną
+-->
+  
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#317EFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Author: Mateusz Wietrak,
+    Illustrator: Patryk Szymański, Category: Zajęcia na uczelnie, Price: nie do wyceny,
+    Length: za długo już to robie">
+    <meta name="robots" content="noodp" />
+    <link rel="stylesheet" href="style/globalssaldo.css" />
+    <link rel="stylesheet" href="style/styleguidesaldo.css" />
+    <link rel="stylesheet" href="style/stylesaldo.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>PWA with AEH Saldo Page</title>
+      
+<!------------------------------------------------------------------------------------------------>
+      
+      <!--Sekcja Script
+Na początku wskazujemy na Nasz plik z wszystkimi Skryptami tj. main.js
+Następnie rejestrujemy tj. uruchamiamy Naszego Service Worker'a
+      -->
+<script defer src="script/main.js">
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
+ <!--><script defer src="https://progressier.app/SxyUNI5KUdrpmst16AqX/script.js"></script><!-->
+      
+<!------------------------------------------------------------------------------------------------>
+      
+</head>
+
+<!--Sekcja Body
+Kod strony w HTML
+Do Main Page przechodzimy strzałką w lewym górnym rogu (niezależnie od strony, ten przycisk przeniesie Nas do Home Page)
+-->
+
+<!------------------------------------------------------------------------------------------------>
+   
+  <body>
+    <div class="balance-page-IDR">
+      <div class="div">
+        <div class="card">
+          <div class="balance">
+            <div class="head">
+              <div class="text-wrapper-2">Active Balance in PLN</div>
+              <img class="img" src="img/iconly-light-outline-arrow-down-2-1.svg" />
+            </div>
+            <div class="text-wrapper-3">10,000</div>
+          </div>
+        </div>
+        <div class="section-transaction">
+          <div class="div-wrapper"><div class="text-wrapper-4">Your Currencies</div></div>
+          <div class="list-currency">
+            <div class="currency">
+              <img class="logo" src="img/logo.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">IDR</div>
+                  <div class="text-wrapper-6">100,000,000</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-1.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">USD</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-2.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">JYP</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-3.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">SGD</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-4.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">THB</div>
+                  <div class="text-wrapper-6">10</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-5.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">AUS</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-6.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">EUR</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-7.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">GBP</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo-2" src="img/logo-8.svg" />
+              <div class="content">
+                <div class="balance-2">
+                  <div class="text-wrapper-5">CAD</div>
+                  <div class="text-wrapper-6">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-head">
+          <div class="section-head-2">
+              <a href="index.html"><img class="img" src="img/iconly-light-arrow-left-2-2.svg" /></a>
+            <div class="text-wrapper-7">Saldo</div>
+            <div class="option">
+            </div>
+          </div>
+        </div>
+        <div class="section-nav-back"><div class="rectangle"></div></div>
+      </div>
+    </div>
+  </body>
+</html>

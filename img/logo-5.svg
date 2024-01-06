@@ -1,0 +1,20 @@
+<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_761_4099)">
+<path d="M15.8626 22.5455C17.4551 15.7562 22.7562 10.4551 29.5455 8.86259C34.4486 7.71247 39.5514 7.71247 44.4545 8.86259C51.2438 10.4551 56.5449 15.7562 58.1374 22.5455C59.2875 27.4486 59.2875 32.5514 58.1374 37.4545C56.5449 44.2438 51.2438 49.5449 44.4545 51.1374C39.5514 52.2875 34.4486 52.2875 29.5455 51.1374C22.7562 49.5449 17.4551 44.2438 15.8626 37.4545C14.7125 32.5514 14.7125 27.4486 15.8626 22.5455Z" fill="url(#pattern0)"/>
+</g>
+<defs>
+<filter id="filter0_d_761_4099" x="0.375" y="0.6875" width="73.25" height="73.25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="7.3125"/>
+<feGaussianBlur stdDeviation="7.3125"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_761_4099"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_761_4099" result="shape"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_761_4099" transform="translate(-0.2) scale(0.0666667)"/>
+</pattern>
+<image id="image0_761_4099" width="21" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAPCAYAAAALWoRrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVHgB7c6xCoJgGIXh8+VgQUOT5NaFpIR5HwXNCtHUVDcQRFNLY0R7dB0NOecQGi42Fuj/lXMZijYEPcvZDi/put1jwXMADaRYVh1kQnArQkyhadZpvTuz2R3zZu+/3ayiKGLP80LS2hbLch2DkY3VbPGyiW3tgKwutzuQnKYV5i1NPEv5B0s/yVtKybOqqiiL7/sgxzS4WZVRln/p90pDRVEakiShqDiOEQSBS0ej0yeiCYhaKIjBVyF4+ADddDlgIM6cTgAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

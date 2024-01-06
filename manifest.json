@@ -1,0 +1,18 @@
+//Plik manifestu do Naszej aplikacji
+
+{
+    "name": "Currency Exchange",
+    "short_name": "MobiExchange",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#317EFB",
+    "background_color": "#000",
+    "icons":[
+    {
+      "src": "/img/LogoFinal.png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

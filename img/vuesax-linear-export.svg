@@ -1,0 +1,20 @@
+<svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_761_4082)">
+<rect x="12.6667" y="8" width="48" height="48" rx="20" fill="white" shape-rendering="crispEdges"/>
+<path d="M41.8467 28.3833C46.0467 28.745 47.7617 30.9033 47.7617 35.6283V35.78C47.7617 40.995 45.6734 43.0833 40.4584 43.0833H32.8634C27.6484 43.0833 25.56 40.995 25.56 35.78V35.6283C25.56 30.9383 27.2517 28.78 31.3817 28.395" stroke="#0A58CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.6667 35.4998V22.2231" stroke="#0A58CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.575 24.8248L36.6667 20.9165L32.7584 24.8248" stroke="#0A58CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_761_4082" x="0.666687" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="6"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.301961 0 0 0 0 0.443137 0 0 0 0 0.47451 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_761_4082"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_761_4082" result="shape"/>
+</filter>
+</defs>
+</svg>

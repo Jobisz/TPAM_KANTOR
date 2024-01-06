@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!------------------------------------------------------------------------------------------------>
+    
+<!--Sekcja Head
+Znaczniki Meta informują o danych Strony
+Znaczniki link odnoszą się w większości do plików Stylów, ale ostatni także do Naszego manifestu
+który pozwala na to, że Nasza strona jest Progresywną Aplikacją Mobilną
+-->
+    
+<html>    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#317EFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Author: Mateusz Wietrak,
+    Illustrator: Patryk Szymański, Category: Zajęcia na uczelnie, Price: nie do wyceny,
+    Length: za długo już to robie">
+    <meta name="robots" content="noodp" />
+    <link rel="stylesheet" href="style/globals.css" />
+    <link rel="stylesheet" href="style/styleguide.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>PWA with AEH Main Page</title>
+
+<!------------------------------------------------------------------------------------------------>
+      
+      <!--Sekcja Script
+Na początku wskazujemy na Nasz plik z wszystkimi Skryptami tj. main.js
+Następnie rejestrujemy tj. uruchamiamy Naszego Service Worker'a
+      -->
+<script defer src="script/main.js">
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
+ <!--><script defer src="https://progressier.app/SxyUNI5KUdrpmst16AqX/script.js"></script><!-->
+      
+<!------------------------------------------------------------------------------------------------>
+      
+</head>
+
+<!--Sekcja Body
+Kod strony w HTML
+Do Profile Page przechodzimy naciskając kółeczko z Naszym zdjęciem
+Do Saldo Page przechodzimy naciskając ikonkę z wykresem w dolnym Menu
+-->
+
+<!------------------------------------------------------------------------------------------------>
+    
+<body>
+    <div class="home">
+      <div class="div">
+        <div class="card">
+          <div class="balance">
+            <div class="head">
+              <div class="text-wrapper">Active Balance in PLN</div>
+              <img class="iconly-light-outline" src="img/iconly-light-outline-arrow-down-2.svg" alt="Zdjecie" />
+            </div>
+            <div class="text-wrapper-2">10,000</div>
+          </div>
+        </div>
+        <div class="feature-finance">
+          <div class="featured">
+            <div class="div-wrapper">
+              <div class="div-2">
+                <img class="img" src="img/vuesax-linear-convert.svg" alt="Zdjecie" />
+                <div class="text-wrapper-3">History</div>
+              </div>
+            </div>
+            <div class="div-wrapper">
+              <div class="div-2">
+                <img class="img" src="img/vuesax-linear-export.svg" alt="Zdjecie" />
+                <div class="text-wrapper-3">Payment</div>
+              </div>
+            </div>
+            <div class="div-wrapper">
+              <div class="div-2">
+                <img class="img" src="img/vuesax-linear-money-send.svg" alt="Zdjecie" />
+                <div class="text-wrapper-3">Payout</div>
+              </div>
+            </div>
+            <div class="div-wrapper">
+              <div class="div-2">
+                <div class="iconly-light-outline-wrapper">
+                  <img class="iconly-light-outline" src="img/iconly-light-outline-swap.svg" alt="Zdjecie" />
+                </div>
+                <div class="text-wrapper-3">Swap</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="head-2">
+            <div class="text-wrapper-4">Foreign Exhange</div>
+            <div class="text-wrapper-5">View All</div>
+          </div>
+          <div class="list-currency">
+            <div class="currency">
+              <img class="logo" src="img/logo-5.svg" alt="Zdjecie" />
+              <div class="content">
+                <div class="description"><div class="text-wrapper-6">USD</div></div>
+                <div class="price"><div class="text-wrapper-7">14,945</div></div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-4.svg" alt="Zdjecie" />
+              <div class="content">
+                <div class="description"><div class="text-wrapper-6">JYP</div></div>
+                <div class="price"><div class="text-wrapper-7">108</div></div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-3.svg" alt="Zdjecie" />
+              <div class="content">
+                <div class="description"><div class="text-wrapper-6">THB</div></div>
+                <div class="price"><div class="text-wrapper-7">435</div></div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-2.svg" alt="Zdjecie" />
+              <div class="content">
+                <div class="description"><div class="text-wrapper-6">SGD</div></div>
+                <div class="price"><div class="text-wrapper-7">10,050</div></div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo-1.svg" alt="Zdjecie" />
+              <div class="content">
+                <div class="description"><div class="text-wrapper-6">AUS</div></div>
+                <div class="price"><div class="text-wrapper-7">9,927</div></div>
+              </div>
+            </div>
+            <div class="currency">
+              <img class="logo" src="img/logo.svg" alt="Zdjecie" />
+              <div class="content">
+                <div class="description"><div class="text-wrapper-6">AED</div></div>
+                <div class="price"><div class="text-wrapper-7">4,067</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="title">
+            <div class="text-wrapper-8">Jan Kowalski</div>
+            <div class="text-wrapper-9">1102120034</div>
+          </div>
+            <div class="profile-picture"><a href="profile.html"><img class="profile-picture-2" src="img/profile-picture.png" alt="Zdjecie" /></a></div>
+        </div>
+        <div class="section-navbar">
+          <div class="overlap">
+            <div class="rectangle"></div>
+            <div class="bottom-bar">
+              <div class="div-4">
+                <img class="img-2" src="img/icon-bold-wallet-2.svg" alt="Zdjecie" />
+                <div class="text-wrapper-11">Home</div>
+              </div>
+              <div class="div-5"><a href="saldo.html"><img class="img-2" src="img/icon-outlinear-chart-2.svg" alt="Zdjecie" /></a></div>
+              <div class="div-5"><img class="img-2" src="img/notification-bing.png" alt="Zdjecie" /></div>
+              <div class="setting"><img class="img-2" src="img/icon-outlinear-setting.svg" alt="Zdjecie" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-nav-back"><div class="rectangle-2"></div></div>
+      </div>
+    </div>
+  </body>
+</html>
