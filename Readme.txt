@@ -97,4 +97,4 @@ Flow aplikacji zostało zaprojektowane tak aby było przyjemne dla użytkownika.
 
 
 -----Want More?----------
-https://www.figma.com/file/LXhgq0hRUQlb8t4Nrjq0Ex/Foreign-Currency-Purchasing-(Community)?type=design&node-id=555%3A2525&mode=design&t=YrkBzmeuD3MRUCit-1
+FIGMA LINK HERE COMING SOON
