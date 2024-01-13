@@ -36,4 +36,24 @@ function geoFindMe(buttonElement) {
     navigator.geolocation.getCurrentPosition(success, error);
   }      
 }
-} 
+}
+
+const button = document.querySelector("button")
+button.addEventListener("click", () => {
+    Notification.requestPermission().then(perm => {
+        if (perm === "granted"){
+            const notification = new Notification("Powiadomienie o wpłacie", {
+                body: "Gratulacje właśnie udało Ci się wpłacić 2.000 PLN na konto",
+                icon: "LogoFinal.png",
+                tag: "Message 1",
+                })
+                notification.addEventListener("error", e => {
+                        alert("error")
+            })
+            var cena = document.getElementById("balance");
+            var text = cena.textContent;
+            var number = parseInt(text) + 2000;
+            cena.innerHTML = number;
+        }
+    })
+})
