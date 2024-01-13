@@ -45,7 +45,6 @@ button.addEventListener("click", () => {
             const notification = new Notification("Powiadomienie o wpłacie", {
                 body: "Gratulacje właśnie udało Ci się wpłacić 2.000 PLN na konto",
                 icon: "LogoFinal.png",
-                tag: "Message 1",
                 })
                 notification.addEventListener("error", e => {
                         alert("error")
