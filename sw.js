@@ -1,4 +1,3 @@
-importScripts("https://progressier.app/SxyUNI5KUdrpmst16AqX/sw.js" );
 
 //Service Worker z jakiego korzystamy do wyświetlania treści Offline pozwala nam na działanie
 //w formacie First Internet then Cache
@@ -61,17 +60,19 @@ self.addEventListener('install', function(event) {
         })
     );
 });
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Zwracamy wartości w Cache
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
+    caches.match(event.request).then(response => {
+      if (response) {
+        return response;
       }
-    )
+      return fetch(event.request).then(fetchResponse => {
+        return caches.open(dynamicCache).then(cache => {
+          cache.put(event.request.url, fetchResponse.clone());
+          return fetchResponse;
+        });
+      });
+    })
   );
 });
 // Ta częśc kodu pozwala nam "czyścić" Cache jeżeli po ponownym połączeniu z Internetem zostanie wysłane rządanie pobrania nowych treści
