@@ -60,19 +60,17 @@ self.addEventListener('install', function(event) {
         })
     );
 });
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      if (response) {
-        return response;
+    caches.match(event.request)
+      .then(function(response) {
+        // Zwracamy wartości w Cache
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
       }
-      return fetch(event.request).then(fetchResponse => {
-        return caches.open(dynamicCache).then(cache => {
-          cache.put(event.request.url, fetchResponse.clone());
-          return fetchResponse;
-        });
-      });
-    })
+    )
   );
 });
 // Ta częśc kodu pozwala nam "czyścić" Cache jeżeli po ponownym połączeniu z Internetem zostanie wysłane rządanie pobrania nowych treści
