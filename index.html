@@ -31,8 +31,21 @@ Na początku wskazujemy na Nasz plik z wszystkimi Skryptami tj. main.js
 Następnie rejestrujemy tj. uruchamiamy Naszego Service Worker'a
       -->
 <script defer src="script/main.js">
+</script>
+
+<script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
+  // wskazanie manualne scope
+  navigator.serviceWorker.register('/sw.js', { scope: "./" }).then(
+    (registration) => {
+      console.log("Service worker registration succeeded:", registration);
+    },
+    (error) => {
+      console.error(`Service worker registration failed: ${error}`);
+    },
+  );
+} else {
+  console.error("Service workers are not supported.");
 }
 </script>
       
